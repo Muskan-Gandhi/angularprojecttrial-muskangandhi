@@ -1,0 +1,7 @@
+.foot{
+    height: 200px;
+    padding: 20px;
+    background-color: #ffeaa7;
+    color: #000;
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #b1a9e7 100%);
+}
