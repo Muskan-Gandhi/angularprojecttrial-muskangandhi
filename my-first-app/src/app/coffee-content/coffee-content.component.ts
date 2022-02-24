@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-coffee-content',
@@ -11,6 +11,7 @@ export class CoffeeContentComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   title = 'my-first-app';
   imageUrl=".././assets/cr1.jpg"
 }

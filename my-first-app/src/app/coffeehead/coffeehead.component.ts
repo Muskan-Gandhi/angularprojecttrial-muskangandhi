@@ -13,4 +13,11 @@ export class CoffeeheadComponent implements OnInit {
   }
   title = 'my-first-app';
   imageUrl=".././assets/icon.jpg"
+
+  //counters=["0"];
+  count =0;
+  incrementcounter(){
+    //this.counters.push(newItem);
+    this.count++;
+  }
 }

@@ -23,4 +23,25 @@ export class AppComponent {
   
   // this.ln="Gandhi";
   // }
+  // fname="james";
+  // able=true;
+
+
+//ODDEVEN
+  // num=0;
+// oddeven(){
+// if (this.num%2==0){
+// return true;
+// }
+// else{
+//   return false;
+// }
+  // }
+
+  //Print Array
+  // numArrays=[1,2,3,4,5,6,7,8,9,0];
+  // strArrays=["abc","bcd","wer","quyt"];
+
+  strArrays=["Jia","Muskan","Sarmistha","Ritu","Ritambhara"];
 }
+

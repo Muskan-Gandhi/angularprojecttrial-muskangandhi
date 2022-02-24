@@ -1,0 +1,9 @@
+.card{
+    margin: 50px;
+    border: 2px solid rgb(168, 164, 164);
+    float: left;
+}
+img{
+    padding: 10px;
+    height: 300px;
+}

@@ -1,8 +1,17 @@
-<div class="txt"><img [src] =" imageUrl">Coffee House</div>
-<ul>
+ <div class="txt"><img [src] =" imageUrl">Coffee House</div>
+<!--<ul>
     <li><a href="E:\frontend\week1\frontend-muskan-raytex-initial\Day3\task6\html\about_us.html">About</a></li>
     <li><a href="E:\frontend\week1\frontend-muskan-raytex-initial\Day3\task6\html\contact_us.html">Contact</a></li>
     <li><a href="#news">Categories</a></li>
     <li><a href="E:\frontend\week1\frontend-muskan-raytex-initial\Day3\task6\html\index.html">Home</a></li>
     
-</ul>
+</ul> 
+<app-coffee-footer></app-coffee-footer> -->
+
+
+ <div class="txt2"><p>count:{{count}}</p></div>
+<!--<ul>
+    <li *ngFor="let counter of counters">
+        {{counter}}</li>
+</ul> -->
+<app-product (newItemEvent)="incrementcounter()"></app-product>
