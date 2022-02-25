@@ -43,5 +43,54 @@ export class AppComponent {
   // strArrays=["abc","bcd","wer","quyt"];
 
   strArrays=["Jia","Muskan","Sarmistha","Ritu","Ritambhara"];
+  // data=
+  // [
+  //   {
+  //     "id": 1,
+  //     "pname": "wheat",
+  //     "price": 200,
+  //     "quantity": 150,
+  //     "manufacturingLocation": "surat",
+  //     "presentStock": 150
+  //   },
+  //   {
+  //     "id": 2,
+  //     "pname": "Rice",
+  //     "price": 200,
+  //     "quantity": 50,
+  //     "manufacturingLocation": "surat",
+  //     "presentStock": 100
+  //   },
+  //   {
+  //     "id": 3,
+  //     "pname": "bread",
+  //     "price": 40,
+  //     "quantity": 50,
+  //     "manufacturingLocation": "surat",
+  //     "presentStock": 100
+  //   },
+  // ]
+  counter=0;
+  totalQuantity=0;
+  billamount=0;
+  cartItems=
+  [
+    {
+      "id": "",
+      "pname": "",
+      "price": "",
+      "quantity": "",
+      "manufacturingLocation": "",
+      "presentStock": ""
+    }
+  ]
+  
+
+  addItem(item:any){
+    this.cartItems.push(item);
+    this.counter++;
+    this.totalQuantity+=Number(item.quantity);
+    this.billamount+=Number(item.quantity)*Number(item.price);
+  }
 }
 

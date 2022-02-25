@@ -1,3 +1,5 @@
+<!-- <app-coffeehead></app-coffeehead> -->
+
 <!-- <img [src] =" imageUrl"> -->
 <!-- <div class="container">
     <button class="btn btn-primary" (click)="counterval()">Click Me</button><br>
@@ -73,4 +75,36 @@
 </div>  -->
 <!-- Print Array 
 <app-coffee-content [strrecevied]="strArrays"></app-coffee-content> -->
-<app-coffeehead></app-coffeehead>
+<div class="container">
+<h1>Cart [{{counter}}]</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cartItem of cartItems">
+      <td>{{cartItem.id}}</td>
+      <td>{{cartItem.pname}}</td>
+      <td>{{cartItem.price}}</td>
+      <td>{{cartItem.quantity}}</td>
+      
+    </tr>
+    <tr>
+      <th>-</th>
+      <td>Total</td>
+      <td>{{billamount}}</td>
+      <td>{{totalQuantity}}</td>
+    </tr>
+  </tbody>
+
+
+</table>
+
+<app-addtocart (newItemevent)="addItem($event)"></app-addtocart>
+</div>

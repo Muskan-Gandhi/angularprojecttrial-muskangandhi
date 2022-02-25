@@ -10,6 +10,9 @@ import { CoffeeContentComponent } from './coffee-content/coffee-content.componen
 import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
 import { ParentComponent } from './parent/parent.component';
 import { ProductComponent } from './product/product.component';
+import { ProductDeatailsComponent } from './product-deatails/product-deatails.component';
+import { Product1Component } from './product1/product1.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { ProductComponent } from './product/product.component';
     CoffeeContentComponent,
     CoffeeFooterComponent,
     ParentComponent,
-    ProductComponent  
+    ProductComponent,
+    ProductDeatailsComponent,
+    Product1Component,
+    AddtocartComponent  
   ],
   imports: [
     BrowserModule,
