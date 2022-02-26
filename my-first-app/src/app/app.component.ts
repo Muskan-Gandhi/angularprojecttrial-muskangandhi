@@ -85,7 +85,7 @@ export class AppComponent {
     }
   ]
   
-
+  
   addItem(item:any){
     this.cartItems.push(item);
     this.counter++;

@@ -14,30 +14,39 @@ export class AddtocartComponent implements OnInit {
   data  =[
     {
       "id": 1,
-      "pname": "wheat",
+      "pname": "Vanilla latte",
       "price": 200,
       "quantity": 1,
       "manufacturingLocation": "surat",
       "presentStock": 150,
-      //"imageurl" : ".././assets/icecoffe.jpg"
+      "imageurl" : ".././assets/vcoffee.jpg"
     },
     {
       "id": 2,
-      "pname": "Rice",
+      "pname": "Cold Coffee",
       "price": 150,
       "quantity": 1,
       "manufacturingLocation": "surat",
       "presentStock": 100,
-      //"imageurl" : ".././assets/icecoffe.jfif"
+      "imageurl" : ".././assets/icecoffe.jfif"
     },
     {
       "id": 3,
-      "pname": "bread",
-      "price": 40,
+      "pname": "Hot Chocolate",
+      "price": 240,
       "quantity": 1,
       "manufacturingLocation": "surat",
       "presentStock": 100,
-      //"imageurl" : ".././assets/mocha.jfif"
+      "imageurl" : ".././assets/hot chocolate.jpg"
+    },
+    {
+      "id": 4,
+      "pname": "Double Chocolaty Chip Frappuccino",
+      "price": 340,
+      "quantity": 1,
+      "manufacturingLocation": "surat",
+      "presentStock": 100,
+      "imageurl" : ".././assets/Double Chocolaty Chip Frappuccino.jpg"
     },
   ]
 

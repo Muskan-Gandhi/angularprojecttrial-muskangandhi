@@ -1,12 +1,12 @@
 <div class="row">
-    <div class="col-sm-4" *ngFor="let d of data">
+    <div class="col-sm-3" *ngFor="let d of data">
       <div class="card">
-           <img [src]="imageurl" alt=""> 
+           <!-- <img [src]="imageurl" alt="">  -->
         <div class="card-body">
+            <p class="card-text"><img [src]="d.imageurl" alt=""> </p>
           <h5 class="card-title">{{d.pname}}</h5>
           <p class="card-text">Rs.{{d.price}}/-</p>
-          <!-- <p class="card-text">Rs.{{d.imageurl}}/-</p> -->
-          <a href="#" class="btn btn-primary" (click)="addItem(d)" >Go somewhere</a>
+          <a href="#" class="btn btn-primary" (click)="addItem(d)" >Add to Cart</a>
         </div>
       </div>
     </div>
