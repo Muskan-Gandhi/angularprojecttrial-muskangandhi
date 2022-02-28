@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserInformationService } from '../user-information.service';
 
 @Component({
   selector: 'app-product-deatails',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDeatailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dt:UserInformationService) {
+    
+  }
+
+  // count = this.dt.increament;
 
   ngOnInit(): void {
   }

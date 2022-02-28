@@ -13,8 +13,9 @@ import { ProductComponent } from './product/product.component';
 import { ProductDeatailsComponent } from './product-deatails/product-deatails.component';
 import { Product1Component } from './product1/product1.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
-
-
+import { DatetimeService } from './datetime.service';
+import { UserInformationService } from './user-information.service';
+import { TimerComponent } from './timer/timer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,14 +26,15 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
     ProductComponent,
     ProductDeatailsComponent,
     Product1Component,
-    AddtocartComponent  
+    AddtocartComponent,
+    TimerComponent  
   ],
   imports: [
     BrowserModule,
     FormsModule
  
   ],
-  providers: [],
+  providers: [DatetimeService,UserInformationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

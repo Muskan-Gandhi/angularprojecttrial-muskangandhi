@@ -1,11 +1,27 @@
 import { Component } from '@angular/core';
-
+import { DatetimeService } from './datetime.service';
+import { UserInformationService } from './user-information.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  constructor(private dt:DatetimeService,public da:UserInformationService){}
+    // getdate = this.dt.today;
+    // d= this.dt.daydate();
+    // info = this.da.userinfo();
+    
+    // name="";
+    // set(val:any){
+    //   this.da.username=val;
+    //   console.log(val);
+    // }
+    
+    // onSubmittoform(user:any){
+    //   console.log(user)
+    // }
   // title = 'my-first-app';
   // imageUrl=".././assets/icon.jpg"
   // count=0;
@@ -42,7 +58,7 @@ export class AppComponent {
   // numArrays=[1,2,3,4,5,6,7,8,9,0];
   // strArrays=["abc","bcd","wer","quyt"];
 
-  strArrays=["Jia","Muskan","Sarmistha","Ritu","Ritambhara"];
+  //strArrays=["Jia","Muskan","Sarmistha","Ritu","Ritambhara"];
   // data=
   // [
   //   {
@@ -70,27 +86,57 @@ export class AppComponent {
   //     "presentStock": 100
   //   },
   // ]
-  counter=0;
-  totalQuantity=0;
-  billamount=0;
-  cartItems=
-  [
-    {
-      "id": "",
-      "pname": "",
-      "price": "",
-      "quantity": "",
-      "manufacturingLocation": "",
-      "presentStock": ""
-    }
-  ]
+  // counter=0;
+  // totalQuantity=0;
+  // billamount=0;
+  // cartItems=
+  // [
+  //   {
+  //     "id": "",
+  //     "pname": "",
+  //     "price": "",
+  //     "quantity": "",
+  //     "manufacturingLocation": "",
+  //     "presentStock": ""
+  //   }
+  // ]
   
   
-  addItem(item:any){
-    this.cartItems.push(item);
-    this.counter++;
-    this.totalQuantity+=Number(item.quantity);
-    this.billamount+=Number(item.quantity)*Number(item.price);
-  }
+  // addItem(item:any){
+  //   this.cartItems.push(item);
+  //   this.counter++;
+  //   this.totalQuantity+=Number(item.quantity);
+  //   this.billamount+=Number(item.quantity)*Number(item.price);
+  //}
+
+  // Task-4 (28/02/22)
+  // Printing table
+  // num:any = [];
+  // tableof=""
+  // table(){
+  //   for(let i=1;i<=10;i++){
+  //     this.num.push(i*Number(this.tableof));
+  //   }
+
+
+  //}
+
+  // Task-5 (28/02/22)
+  // Hotel Booking
+
+  // todate:any;
+  // fromdate:any;
+  // to:any;
+  // from:any;
+  // price=500;
+  // caculate(todate:any,fromdate:any){
+    
+  //   var tdate = new Date(this.todate);
+  //   var fdate = new Date(this.fromdate);
+  //   var days = (fdate.getTime() - tdate.getTime())/(1000 * 3600 * 24);
+  //   var amount=this.price*days;
+  //   console.log(days);
+  //   console.log("Amount of "+ days +" days stay is "+amount);
+  //  }
 }
 

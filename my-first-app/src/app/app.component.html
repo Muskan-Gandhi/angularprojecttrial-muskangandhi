@@ -1,3 +1,5 @@
+<!-- <p>{{d.c}}</p> -->
+
 <!-- <app-coffeehead></app-coffeehead> -->
 
 <!-- <img [src] =" imageUrl"> -->
@@ -75,7 +77,7 @@
 </div>  -->
 <!-- Print Array 
 <app-coffee-content [strrecevied]="strArrays"></app-coffee-content> -->
-<div class="container">
+<!-- <div class="container">
 <h1>Cart [{{counter}}]</h1>
 
 <table class="table">
@@ -107,4 +109,80 @@
 </table>
 
 <app-addtocart (newItemevent)="addItem($event)"></app-addtocart>
-</div>
+</div> -->
+
+
+<!-- Table Print
+<p>{{ getdate }}</p>
+<p>{{ d }}</p>
+
+
+<table *ngFor="let i of info">
+<tr>
+  <td>{{ i.id }}</td>
+  <td>{{ i.name }}</td>
+  <td>{{ i.username }}</td>
+  <td>{{ i.email }}</td>
+</tr>
+</table> -->
+
+<!-- <form action="#">
+  <br>
+  <label>Enter Name</label>
+  <input type="text" [(ngModel)]="name" #myInput>
+  <button (click)="set(myInput.value)">Click</button>
+  <h1>{{da.username}}</h1>
+  </form> -->
+
+
+
+  <!-- 28/02/2022
+  Task - Form to print input data
+    <div class="container">
+  <form #myForm="ngForm" (ngSubmit)="da.onSubmittoform(myForm.value)">
+    
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" aria-describedby="emailHelp" [(ngModel)]="da.user.email" required>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label" >Password</label>
+      <input type="password" class="form-control" name="password" [(ngModel)]="da.user.password" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" [disabled]="!myForm.form.valid">Submit</button>
+  </form>
+  </div> -->
+
+  
+      
+  <!-- <input type="text" [(ngModel)]="tableof">
+
+      <button (click)="table()"> Table</button>
+      <h3 *ngFor="let n of num; let i=index">
+        {{tableof}} * {{i+1}}= {{n}}
+      </h3>
+    -->
+  
+  
+  <!-- 
+    Task-5 (28/02/22)
+    Hotel Booking
+    <div class="container">
+    <form>
+      <div class="mb-3">
+        <label class="form-label" >To</label>
+        <input type="text" class="form-control" [(ngModel)]="to" name="to" ><br>
+        <label class="form-label" >To : - </label>
+        <input type="date" [(ngModel)]="todate" name="todate"><br><br>
+        <label class="form-label">From</label>
+        <input type="text" class="form-control" [(ngModel)]="from" name="from"><br>
+        <label class="form-label" >From : - </label>
+        <input type="date" [(ngModel)]="fromdate" name="fromdate">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="caculate(todate.value,fromdate.value)">Submit</button>
+    </form>
+  </div>    -->
+        
+  <app-timer></app-timer>
