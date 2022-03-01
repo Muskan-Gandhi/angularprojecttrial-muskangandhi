@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -16,6 +16,8 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
 import { DatetimeService } from './datetime.service';
 import { UserInformationService } from './user-information.service';
 import { TimerComponent } from './timer/timer.component';
+import { ReactiveFormsModuleComponent } from './reactive-forms-module/reactive-forms-module.component';
+import { ReactiveAddressFormComponent } from './reactive-address-form/reactive-address-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,11 +29,14 @@ import { TimerComponent } from './timer/timer.component';
     ProductDeatailsComponent,
     Product1Component,
     AddtocartComponent,
-    TimerComponent  
+    TimerComponent,
+    ReactiveFormsModuleComponent,
+    ReactiveAddressFormComponent  
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
  
   ],
   providers: [DatetimeService,UserInformationService],

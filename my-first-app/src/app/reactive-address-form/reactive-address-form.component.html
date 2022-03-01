@@ -1,0 +1,49 @@
+<p>reactive-address-form works!</p>
+<!-- Task 1 : Reactive forms using form control &  form builder -->
+<div class="container">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div>
+            <label>First Name
+            <input formControlName="firstname" placeholder="Enter your name">
+        </label>
+        </div>
+        <div>
+            <label>Last Name
+            <input formControlName="lastname" placeholder="Enter your last name">
+        </label>
+        </div>
+        <div>
+        <label>Email
+            <input formControlName="email" placeholder="Enter your email">
+        </label>
+        </div>
+        <div>
+            <label>City
+            <input formControlName="city" placeholder="Enter your City">
+        </label>
+        </div>
+        <div>
+            <label>Age
+                <input formControlName="age" placeholder="Enter your email">
+            </label>
+        </div>
+        <div>
+            <label>Contact Number
+            <input formControlName="mobnumber" placeholder="Enter your name">
+        </label>
+        </div>
+        <div>
+            <label>To Date
+            <input formControlName="todate" type="date">
+        </label>
+        </div>
+        <div>
+            <label>From Date
+            <input formControlName="fromdate" type="date">
+        </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
