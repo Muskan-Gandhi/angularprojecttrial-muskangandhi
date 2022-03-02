@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { DatetimeService } from './datetime.service';
 import { UserInformationService } from './user-information.service';
+import { Observable, Subscriber } from 'rxjs';
+import { HttpDataRequestService } from './http-data-request.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +11,34 @@ import { UserInformationService } from './user-information.service';
 })
 export class AppComponent {
   
-  constructor(private dt:DatetimeService,public da:UserInformationService){}
+  constructor(public ht:HttpDataRequestService){
+    
+  }
+
+ 
+  ngOnInit() { 
+      this.ht.getdata().subscribe((data) => this.show(data));
+      
+
+  } 
+  
+  // htdata:any;
+  // show(data:any){
+  //   return this.htdata=data;
+  //}
+
+  //get data from json using GET
+  result:any;
+  show(data:any){
+    this.result=data;
+  }
+
+  id='';
+  name="";
+  get(id:any){
+    console.log(id);
+    this.name=this.result[id].name;
+  }
     // getdate = this.dt.today;
     // d= this.dt.daydate();
     // info = this.da.userinfo();
@@ -138,5 +168,8 @@ export class AppComponent {
   //   console.log(days);
   //   console.log("Amount of "+ days +" days stay is "+amount);
   //  }
+
+
+
 }
 

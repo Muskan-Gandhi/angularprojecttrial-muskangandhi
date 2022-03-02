@@ -189,4 +189,20 @@
 
 <!-- <app-reactive-forms-module></app-reactive-forms-module> -->
 
-<app-reactive-address-form></app-reactive-address-form>
+<!-- <app-reactive-address-form></app-reactive-address-form> -->
+
+<!-- <ul *ngFor="let d of htdata">
+  <li>{{d.id}} {{d.title}}</li>
+</ul> -->
+
+<div class="container">
+  <form ngModel="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label" >Enter Id</label>
+      <input type="text" class="form-control" [(ngModel)]="id" name="id" ><br>
+      <label class="form-label" >Name</label>
+      <input type="text" class="form-control" [(ngModel)]="name" name="nm" placeholder="{{ name }}"><br>
+      <button type="submit" class="btn btn-primary" (click)="get(id)">Submit</button>
+    </div>
+  </form>
+</div>
